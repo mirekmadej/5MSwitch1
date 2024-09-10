@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5MSwitch.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Switch
+                IsToggled="False"
+                x:Name="swSwitch1"
+                Toggled="onSwitchToggled"
+                />
+            <Label
+                Text="switch: off"
+                x:Name="lblStan"
+                />
+            <Rectangle
+                HeightRequest="20"
+                BackgroundColor="Black"
+                />
+            <Switch
+                IsToggled="False"
+                x:Name="swSwitch2"
+                
+                />
+            <HorizontalStackLayout Spacing="10">
+                <Button
+                    Text="włącz"
+                    Clicked="onSw2ON"
+                    />
+                <Button
+                    Text="wyłącz"
+                    Clicked="onSw2OFF"
+                    />
+            </HorizontalStackLayout>
+
+            <Rectangle
+                BackgroundColor="Black"
+                HeightRequest="20"
+                />
+            <Switch
+                OnColor="Red"
+                ThumbColor="Green"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
